@@ -14,7 +14,7 @@ function App() {
         <Route path="/My" element={<My />} />
       </Routes>
       <nav>
-        <Link to={"/"}>Community </Link>
+        <Link to={"/"}> Community </Link>
         <Link to={"/Club"}> / Club </Link>
         <Link to={"/Center"}> / Center </Link>
         <Link to={"/My"}> / My </Link>
