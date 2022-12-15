@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function My() {
   return (
-    <article>        {/* 아티클영역, 객체를 보여주는 프레임 */}
+    <article>    
       <div>
         <div>profile_img</div>
         <div>
