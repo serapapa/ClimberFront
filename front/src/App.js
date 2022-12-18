@@ -17,7 +17,6 @@ function App() {
             <Route path="/Club" element={<Club />} />
             <Route path="/Center" element={<Center />} />
             <Route path="/My" element={<My />} />
-            <Route path="/Community/write" element={<My />} />
           </Routes>
         </section>
         <Nav></Nav>

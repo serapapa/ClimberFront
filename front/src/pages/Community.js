@@ -1,11 +1,10 @@
 import React from 'react'
-import BoardList from '../component/listComponent/BoardList'
-
+import CommunityBoardList from '../component/listComponent/CommunityBoardList'
 
 function Community() {
   return (
     <>
-      <BoardList></BoardList>
+      <CommunityBoardList></CommunityBoardList>
     </>
   )
 }

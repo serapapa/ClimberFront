@@ -1,8 +1,8 @@
 import React from 'react'
-import BoardItem from './item/Board'
+import MyItem from './item/MyItem'
 
-function BoardList() {
-  let boardList = [
+function MyBoardList() {
+  let clubBoardList = [
     { id: 1, img: './public/logo512.png' },
     { id: 2, img: './logo512.png' },
     { id: 5, img: './logo512.png' },
@@ -11,11 +11,11 @@ function BoardList() {
 
   return (
     <div>
-      {boardList.map((board, i) => {
-        return <BoardItem board={board} index={i} />
+      {clubBoardList.map((myItem, i) => {
+        return <MyItem myItem={myItem} index={i} />
       })}
     </div>
   )
 }
 
-export default BoardList
+export default MyBoardList
