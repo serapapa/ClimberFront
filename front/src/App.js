@@ -5,6 +5,7 @@ import Community from './pages/Community'
 import Club from './pages/Club'
 import Center from './pages/Center'
 import My from './pages/My'
+import './component/component.css'
 
 function App() {
   return (

@@ -1,42 +1,91 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import { TbUserPlus } from "react-icons/tb";
 
 function My() {
   return (
     <>
-    {/* 헤더영역, 각 페이지 연결하는 버튼만 들어가는 공간 */}
-    <header>
-      <h3>
-        <Link to={"/"}>Logo</Link>
-      </h3>
-      <h6>
-        <Link to={"/Editor"}><i>Editor</i></Link>
-        <Link to={"/Chatlist"}><i>Chatlist</i></Link>
-      </h6>
-    </header>
-
-
     {/* 섹션영역, 아티클 형태로 객체가 유입되는 공간 */}
     <section>
-    <h1>마이홈</h1>
-      <article>        {/* 아티클영역, 객체를 보여주는 프레임 */}
+    <div class="pro_container">
+      
+      <div class="pro">
+        <img className="mr-3 pro_img" src="profile.jpg" alt="profile"/>
+      </div>
+      
+      <div class="pro_stats">
         <div>
-          <div>profile_img</div>
-          <div>
-            <h5>id</h5>
-            <h6>profile</h6>
-          </div>
+          <h3>642</h3>
+          <p>게시물</p>
         </div>
-        <div>main_img</div>
         <div>
-          <Link to={"/"}><i>like</i></Link>
-          <Link to={"/writing_reply"}><i>writing_reply</i></Link>
-          <Link to={"/Chatroom"}><i>Chatroom</i></Link>
+          <h3>112</h3>
+          <p>팔로워</p>
         </div>
-        <div>reply</div>
-        <div>writing_time</div>
-      </article>
+        <div>
+          <h3>110</h3>
+          <p>팔로잉</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pro_set">
+        {/* 프로필편집으로 이동하는 버튼 */}
+        <button class="btn pro_edit_btn">프로필 편집</button>
+        {/* 주변 친구추천 리스트로 이동하는 버튼 */}
+        <button class="btn pro_recommend"><TbUserPlus fontSize="1.5rem"/></button>
+      </div>
       </section>
+      {/* 상단 프로필 끝 */}
+
+      {/* 아이콘 : 암장에만 들어가는 부분*/}
+      {/* <div id="">
+        <i class="fas fa-th"></i>
+        <i class="far fa-id-badge"></i>
+        </div> */}
+      
+      {/* 이미지 그리드 */}
+
+      <div class="grid_photo">
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       <div class="img_box">
+         <img src="avatar-1.jpg" alt="img"/>
+       </div>
+       
+      </div>
+
     </>
   )
 }
