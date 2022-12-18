@@ -38,7 +38,7 @@ function My() {
       </section>
       {/* 상단 프로필 끝 */}
 
-      {/* 아이콘 : 암장에만 들어가는 부분*/}
+      {/* 아이콘 : if 암장이면 , 아이콘 3개 중간에 나옴/}
       {/* <div id="">
         <i class="fas fa-th"></i>
         <i class="far fa-id-badge"></i>
@@ -47,6 +47,7 @@ function My() {
       {/* 이미지 그리드 */}
 
       <div class="grid_photo">
+        {/* 이미지 클릭하면 해당 게시물로 이동 */}
        <div class="img_box">
          <img src="avatar-1.jpg" alt="img"/>
        </div>

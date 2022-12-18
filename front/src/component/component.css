@@ -301,7 +301,7 @@
 .pro_edit_btn{
   width:80%;
   height: 45px;
-  border-radius: 1.4rem;
+  border-radius: 20px;
   font-size: 1.1rem;
   color:rgb(86, 86, 86);
   background-color: rgb(224, 224, 224);
@@ -338,10 +338,83 @@
   height: 100%;
 }
 
+/* club main css */
 
+.box {
+  height: 60px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.top_box{
+  margin: 17px auto;
+  width: 350px;
+}
 
+.container-1{
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
 
+.container-1 input{
+  width: 100%;
+  height: 45px;
+  background: #ebebeb;
+  border: none;
+  font-size: 16px;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  border-radius: 20px;
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; */
+}
 
+.container-1 input:focus {
+  outline:none
+}
 
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 13px;
+  margin-top: 10px;
+  z-index: 1;
+  color: #63717f;
+}
 
+.club_create_btn{
+  margin-top: 10px;
+  width: 350px;
+  height: 45px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff5b2d;
+  border-color: #ff5b2d;
+}
 
+.club_create_btn:hover {
+  color: #fff;
+  background-color: #ff6940;
+  border-color: #ff6940;
+}
+
+.bottom_box{
+  margin: 17px auto;
+  width: 350px;
+}
+
+hr{
+    background: #c4c4c4;
+    height:1px;
+    border:0;
+}
+.my_club_box{
+    margin: 17px auto;
+    width: 350px;
+}
+
+.club_name{
+  font-size: 17px;
+}

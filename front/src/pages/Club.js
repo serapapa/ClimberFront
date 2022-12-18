@@ -1,25 +1,49 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import {TbSearch, TbChevronRight} from "react-icons/tb";
 
 function Club() {
   return (
-    <article>        {/* 아티클영역, 객체를 보여주는 프레임 */}
-    <div>
-      <div>profile_img</div>
-      <div>
-        <h5>id</h5>
-        <h6>profile</h6>
+   <>
+   <div class= "box">
+      <div class="top_box">
+        <div class="container-1">
+           <div class="icon"><TbSearch fontSize="1.4em"/></div>
+           <input type="search" id="search" placeholder="클럽 이름 검색하기" />
+        </div>
       </div>
     </div>
-    <div>main_img</div>
-    <div>
-      <Link to={"/"}><i>like</i></Link>
-      <Link to={"/writing_reply"}><i>writing_reply</i></Link>
-      <Link to={"/Chatroom"}><i>Chatroom</i></Link>
+
+    <div class="my_club_box">
+      <h3 class="my_club"><b>내 클럽</b></h3>
+       {/* 클릭하면 해당 클럽 홈으로 이동 */}
+        <div>
+          <p class="club_name"> 딜라이트 클라이밍</p>
+        </div>
+        <div>
+          <p class="club_name">돌고래 크루</p>
+        </div>
     </div>
-    <div>reply</div>
-    <div>writing_time</div>
-  </article>
+    <hr/>
+
+    <div>
+      <h3><b>클럽 추천</b></h3>
+    
+
+
+    </div>
+
+
+
+
+
+
+
+      <div class="bottom_box">
+        <button class="btn club_create_btn">클럽 생성</button>
+      </div>
+   
+   </>
   )
 }
 

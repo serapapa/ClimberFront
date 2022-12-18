@@ -13,10 +13,10 @@ function Headers() {
       <h6>
         <div class="nav_con">
         <Link to={'/Editor'} className="px-2">
-          <IoAddCircleOutline fontSize="2.2em"/>
+          <IoAddCircleOutline fontSize="1.8em"/>
         </Link>
         <Link to={'/Chatlist'} className="px-2">
-          <IoPaperPlaneOutline fontSize="2.2em"/>
+          <IoPaperPlaneOutline fontSize="1.8em"/>
         </Link>
         </div>
         </h6>
